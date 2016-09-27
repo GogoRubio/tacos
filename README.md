@@ -60,3 +60,71 @@ public class Taco {
 	
 
 }
+
+public class Marisco extends Taco {
+	private double precio;
+
+	
+	public double descuentomarisco(int setprecio){
+		this.precio=setprecio;
+		precio=setprecio-(setprecio*super.descuento(.12));
+		return precio;
+	}
+		
+		
+
+}
+
+
+
+public class Canasta extends Taco {
+private double precio;
+
+	
+	public double descuentocanasta(int setprecio){
+		this.precio=setprecio;
+		precio=setprecio-(setprecio*super.descuento(.12));
+		return precio;
+	}
+}
+
+
+
+public class Asadero extends Taco {
+private double precio;
+
+	
+	public double descuentoasadero(int setprecio){
+		this.precio=setprecio;
+		precio=setprecio-(setprecio*super.descuento(.12));
+		return precio;
+	}
+}
+
+
+
+public class app {
+
+	public static void main(String[] args) {
+	
+		Marisco m=new Marisco();
+		m.setmarisco(10);
+		m.descuentomarisco(15);
+		m.descuento(.12);
+		
+		
+		
+		Canasta c=new Canasta();
+		c.setcanasta(10);
+		c.descuentocanasta(18);
+		c.descuento(.23);
+		
+		
+		Asadero a=new Asadero();
+		a.setasadero(10);
+		a.descuentoasadero(17);
+		a.descuento(.60);
+		
+		
+		
+		
